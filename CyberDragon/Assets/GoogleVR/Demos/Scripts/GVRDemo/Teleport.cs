@@ -15,6 +15,7 @@
 using UnityEngine;
 
 using System.Collections;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Collider))]
 public class Teleport : MonoBehaviour {
@@ -58,4 +59,25 @@ public class Teleport : MonoBehaviour {
     float distance = 2 * Random.value + 1.5f;
     transform.localPosition = direction * distance;
   }
+
+
+	public Transform LoadingBar;
+	public GameObject ESCENARIO;
+	[SerializeField] private float currentAmount;
+	[SerializeField] private float speed;
+
+	public void desaparecer()
+	{
+		if (currentAmount < 100) {
+			currentAmount += speed * Time.deltaTime;
+			if (currentAmount == 100)
+			{
+
+				currentAmount = 0;
+			}
+		}
+
+		LoadingBar.GetComponent<Image> ().fillAmount = currentAmount / 100;
+		ESCENARIO.SetActive (false);
+	}
 }

@@ -178,10 +178,14 @@
      <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrMathHelpers.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrUIHelpers.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
+     <Compile Include="Assets\MyScripts\cambioUI.cs" />
      <Compile Include="Assets\MyScripts\CharacterMotor.cs" />
      <Compile Include="Assets\MyScripts\FPSInputController.cs" />
      <Compile Include="Assets\MyScripts\Movimiento.cs" />
      <Compile Include="Assets\MyScripts\Seguir.cs" />
+     <Compile Include="Assets\ProgressBar\Script\ProgressBarBehaviour.cs" />
+     <Compile Include="Assets\ProgressBar\Script\ProgressRadialBehaviour.cs" />
+     <Compile Include="Assets\ProgressBar\Script\Utils.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\VRSampleScenes\Scripts\Common\SessionData.cs" />
      <Compile Include="Assets\VRSampleScenes\Scripts\Examples\ExampleInteractiveItem.cs" />
