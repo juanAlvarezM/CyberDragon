@@ -5,6 +5,7 @@ public class Seguir : MonoBehaviour {
 
 	public Transform m_Jugador;
 
+
 		// Use this for initialization
 		void Start ()
 		{
@@ -15,5 +16,9 @@ public class Seguir : MonoBehaviour {
 		void Update () {
 		GetComponent<UnityEngine.AI.NavMeshAgent>().destination = m_Jugador.position;
 		}
+	public void OnCollisionEnter()
+	{
+		Destroy (gameObject);
+	}
 }
 

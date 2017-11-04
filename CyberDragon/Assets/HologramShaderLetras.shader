@@ -71,7 +71,7 @@ Shader "World of Zero/HologramLetras"
 				//col es el color que queremos asignarle
 				//podemos usar en vez de todoas las lineas de abajo col = fixe(R,G,B,Alpha);d
 				//Lo que sigue la pone de un unico color
-				col = _Color * max (0 , cos(i.objVertex.y * 1000 + _Time.x * 100));
+				col = _Color * max (0 , cos(i.objVertex.y * 10 + _Time.x * 100));
 				//col = fixed4(cos(i.objVertex.y*100),0,0,cos(i.objVertex.y*100));
 				//col = _Color * max(0, cos(i.objVertex.y * _ScanningFrequency + _Time.x * _ScanningSpeed) + _Bias);
 				//col *= 1 - max(0, cos(i.objVertex.x * _ScanningFrequency + _Time.x * _ScanningSpeed) + 0.9);
